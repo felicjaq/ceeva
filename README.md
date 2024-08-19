@@ -33,7 +33,7 @@ Ceeva is a tool for checking SSL/TLS certificates across multiple domains and po
 Ceeva allows you to check SSL/TLS certificates for domains and IP addresses. You can specify IP ranges, ports, and choose the report format.
 
 ```bash
-    main.py [-h] --source SOURCE [--ports PORTS] [--report REPORT] [--format {xlsx,html}] [--language {en,ru}] [-v]
+python3 main.py [-h] --source SOURCE [--ports PORTS] [--report REPORT] [--format {xlsx,html}] [--language {en,ru}] [-v]
 ```
 
 ## Examples
