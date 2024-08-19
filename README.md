@@ -50,5 +50,5 @@ python3 main.py [-h] --source SOURCE [--ports PORTS] [--report REPORT] [--format
     
 3. Generate an HTML report for specific domains:
     ```bash
-    python3 main.py -s example.com,anotherdomain.com -f html -p 443 -r report
+    python3 main.py -s example.com,anotherdomain.com -p 443 -f html -r report
     ```    
