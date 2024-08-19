@@ -2,6 +2,17 @@
 
 Ceeva is a tool for checking SSL/TLS certificates across multiple domains and ports. It provides detailed reports in various formats and supports multiple languages.
 
+## Features
+
+- **Certificate Retrieval:** Obtain certificates for multiple domains and ports.
+- **Expiry Highlighting:**
+  - **Red** for expired certificates
+  - **Orange** for certificates expiring in less than 7 days
+  - **Yellow** for certificates expiring in less than 30 days
+  - **Green** for certificates with more than 30 days remaining
+- **Data Export:** Export data to XLSX and HTML formats with sorting and highlighting.
+- **Multilingual Support:** Available in multiple language
+
 ## Installation
 
 1. Clone the repository:
@@ -21,7 +32,7 @@ Ceeva is a tool for checking SSL/TLS certificates across multiple domains and po
 
 Ceeva allows you to check SSL certificates for domains and IP addresses. You can specify IP ranges, ports, and choose the report format.
 
-### Examples
+## Examples
 
 1. Check a single domain and port:
     ```bash
