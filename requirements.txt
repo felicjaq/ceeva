@@ -1,0 +1,7 @@
+argparse
+ipaddress
+logging
+OpenSSL
+colorama
+ssl
+socket
