@@ -30,7 +30,7 @@ Ceeva is a tool for checking SSL/TLS certificates across multiple domains and po
 
 ## Usage
 
-Ceeva allows you to check SSL certificates for domains and IP addresses. You can specify IP ranges, ports, and choose the report format.
+Ceeva allows you to check SSL/TLS certificates for domains and IP addresses. You can specify IP ranges, ports, and choose the report format.
 
 ## Examples
 
