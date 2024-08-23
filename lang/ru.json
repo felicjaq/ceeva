@@ -17,7 +17,7 @@
     "serial_number": "Серийный номер",
     "report_required": "Аргумент --report (-r) обязателен при указании --format (-f).",
     "format_required": "Аргумент --format (-f) обязателен при указании --report (-r).",
-    "sheet_title": "SSL/TLS сертификаты",
+    "sheet_title": "Сертификаты",
     "checking_certificate_for": "Проверка сертификата для {0}:{1}",
     "successfully_retrieved_certificate": "Успешно получен сертификат с {0}:{1}",
     "could_not_retrieve_certificate": "Не удалось получить сертификат с {0}:{1} после {2} попыток."
