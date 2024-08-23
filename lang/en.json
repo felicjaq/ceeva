@@ -17,7 +17,7 @@
     "serial_number": "Serial Number",
     "report_required": "The --report (-r) argument is required when --format (-f) is specified.",
     "format_required": "The --format (-f) argument is required when --report (-r) is specified.",
-    "sheet_title": "SSL/TLS Certificates",
+    "sheet_title": "Certificates",
     "checking_certificate_for": "Checking certificate for {0}:{1}",
     "successfully_retrieved_certificate": "Successfully retrieved certificate from {0}:{1}",
     "could_not_retrieve_certificate": "Could not retrieve certificate from {0}:{1} after {2} attempts."
