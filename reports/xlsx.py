@@ -26,7 +26,7 @@ def generate_excel_report(domains_certs, filename, language):
 
     headers = [
         language['domain_ip'], language['port'], language['issued_date'], language['expiry_date'],
-        language['subject'], language['issuer'], language['serial_number'], language['days_until_expiry']
+        language['days_until_expiry'], language['subject'], language['issuer'], language['serial_number']
     ]
     ws.append(headers)
 
@@ -49,10 +49,10 @@ def generate_excel_report(domains_certs, filename, language):
                 port,
                 cert_info[language['issued_date']],
                 cert_info[language['expiry_date']],
+                remaining_days,
                 cert_info[language['subject']],
                 cert_info[language['issuer']],
-                str(cert_info[language['serial_number']]),
-                remaining_days
+                str(cert_info[language['serial_number']])
             ]
             rows.append((remaining_days, row))
 
@@ -63,14 +63,14 @@ def generate_excel_report(domains_certs, filename, language):
 
     for _, row_data in rows:
         ws.append(row_data)
-        fill_color = get_fill_color_for_expiry(row_data[-1])
-        expiry_cell = ws.cell(row=ws.max_row, column=8)
+        fill_color = get_fill_color_for_expiry(row_data[4])
+        expiry_cell = ws.cell(row=ws.max_row, column=5)
         expiry_cell.fill = PatternFill(start_color=fill_color, end_color=fill_color, fill_type='solid')
         for cell in ws[ws.max_row]:
             cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
             cell.border = cell_border
 
-    column_widths = [25, 10, 25, 25, 30, 30, 20, 20]
+    column_widths = [25, 10, 25, 25, 20, 30, 30, 25]
     for i, width in enumerate(column_widths):
         col_letter = get_column_letter(i + 1)
         ws.column_dimensions[col_letter].width = width
