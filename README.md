@@ -10,7 +10,7 @@ Ceeva is a tool for checking SSL/TLS certificates across multiple domains and po
   - **Orange** for certificates expiring in less than 7 days
   - **Yellow** for certificates expiring in less than 30 days
   - **Green** for certificates with more than 30 days remaining
-- **Data Export:** Export data to XLSX and HTML formats with sorting and highlighting.
+- **Data Export:** Export data to xlsx/html/json formats with sorting and highlighting
 - **Multilingual Support:** Available in multiple language
 
 ## Installation
@@ -33,7 +33,7 @@ Ceeva is a tool for checking SSL/TLS certificates across multiple domains and po
 Ceeva allows you to check SSL/TLS certificates for domains and IP addresses. You can specify IP ranges, ports, and choose the report format.
 
 ```bash
-python3 main.py [-h] --source SOURCE [--ports PORTS] [--report REPORT] [--format {xlsx,html}] [--language {en,ru}] [-v]
+python3 main.py [-h] --source SOURCE [--ports PORTS] [--report REPORT] [--format {xlsx,html,json}] [--language {en,ru}] [-v]
 ```
 
 ## Examples

@@ -6,6 +6,7 @@ from utils.logging import setup_logging
 from utils.certificates import get_certificates, extract_cert_info, print_cert_info_to_console
 from reports.xlsx import generate_excel_report
 from reports.html import generate_html_report
+from reports.json import generate_json_report
 from utils.language import load_language
 
 def expand_source_range(source):
@@ -44,7 +45,7 @@ def main():
     )
     parser.add_argument(
         '--format', '-f',
-        choices=['xlsx', 'html'],
+        choices=['xlsx', 'html', 'json'],
         help='The format of the report.'
     )
     parser.add_argument(
@@ -109,6 +110,9 @@ def main():
             elif report_format == 'html':
                 report_file += '.html'
                 generate_html_report(domains_certs, report_file, language)
+            elif report_format == 'json':
+                report_file += '.json'
+                generate_json_report(domains_certs, report_file, language)    
             logger.info(language['report_saved'].format(report_file))
         else:
             print_cert_info_to_console(domains_certs, language)
