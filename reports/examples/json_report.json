@@ -1,0 +1,32 @@
+[
+    {
+        "Domain/IP": "google.com",
+        "Port": 443,
+        "Issued Date": "2024-07-30 12:32:53",
+        "Expiry Date": "2024-10-22 12:32:52",
+        "Days Until Expiry": 56,
+        "Subject": "CN: *.google.com",
+        "Issuer": "C: US, O: Google Trust Services, CN: WR2",
+        "Serial Number": "150939920476519325899932999567496020356"
+    },
+    {
+        "Domain/IP": "yandex.ru",
+        "Port": 443,
+        "Issued Date": "2024-07-12 08:02:20",
+        "Expiry Date": "2025-01-09 20:59:59",
+        "Days Until Expiry": 136,
+        "Subject": "C: RU, ST: Moscow, L: Moscow, O: YANDEX LLC, CN: *.xn--d1acpjx3f.xn--p1ai",
+        "Issuer": "C: BE, O: GlobalSign nv-sa, CN: GlobalSign ECC OV SSL CA 2018",
+        "Serial Number": "37391386345674715575749168679"
+    },
+    {
+        "Domain/IP": "angarasecurity.ru",
+        "Port": 443,
+        "Issued Date": "2024-03-04 08:32:16",
+        "Expiry Date": "2025-04-05 08:32:15",
+        "Days Until Expiry": 221,
+        "Subject": "C: RU, ST: Moscow, L: Moscow, O: LLC AT GROUP, CN: *.angarasecurity.ru",
+        "Issuer": "C: BE, O: GlobalSign nv-sa, CN: GlobalSign RSA OV SSL CA 2018",
+        "Serial Number": "34702219689611151725034737198"
+    }
+]
